@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortFolio</title>
     <!-- font style css -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,100&family=Nunito+Sans:opsz,wght@6..12,200&family=Oswald:wght@200;300;600&family=Poppins:ital,wght@0,100;0,300;0,600;0,800;1,100&display=swap" rel="stylesheet">
 
     <!-- script feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -31,15 +28,13 @@
       <nav class="navbar">
         <a href="#" class="navbar-logo">My<span>Portfolio</span></a>
 
-        <div class="navbar-nav" id="active">
-          <!-- <button class="btn-menu">Menu</button> -->
-          <div class="navbar-content">
+        <div class="navbar-nav" >
             <a href="#home">Profile</a>
             <a href="#about">About</a>
             <a href="#project">Projects</a>
             <a href="#contact">Contacts</a>
-          </div>
         </div>
+          <a href="" id="hamburger-menu"><i data-feather="menu"></i></a>
       </nav>
     </header>
 
@@ -72,9 +67,9 @@
     <section class="about" id="about">
       <h2>Tentang saya</h2>
 
-      <div class="group-items">
-        <div class="items">
-          <div class="img-center">
+      <div class="card">
+        <div class="card-item">
+          <div class="img-center card-img">
             <img src="img/codepolitan-logo.png" alt="logo code politan" />
           </div>
           <h3>Course at Codepolitan</h3>
@@ -84,72 +79,40 @@
             Esse, quos?
           </p>
         </div>
-        <div class="items">
-          <figure>
-            <img src="img/fcp.png" alt="logo freecodecamp" />
-            <figcaption>
-              <h3>
-                <a
-                  href="https://www.freecodecamp.org/IsfandiarAdi"
-                  target="_blank"
-                  >Certificate FreeCodeCamp</a
-                >
-              </h3>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="items">
-          <figure>
-            <img
-              src="img/6SMW2KK - Mengenal Pemrograman Komputer.jpg"
-              alt="Sertifikat Mengenal Pemograman Komputer"
-            />
-            <figcaption>
-              <h3>
-                <a href="https://www.codepolitan.com/c/6SMW2KK" target="_blank"
-                  >Certificate - Mengenal Pemograman Komputer</a
-                >
-              </h3>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="items">
-          <figure>
-            <img
-              src="img/YB8XC65 - Algoritma dan Pemrograman Dasar.jpg"
-              alt="Algoritma dan Pemrograman Dasar"
-            />
-            <figcaption>
-              <h3>
-                <a href="https://www.codepolitan.com/c/YB8XC65" target="_blank"
-                  >Certificate - Algoritma dan Pemrograman Dasar</a
-                >
-              </h3>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="items">
-          <figure>
-            <img
-              src="img/XQ2SI5M - Mahir menggunakan Text Editor buat Pemula.jpg"
-              alt=""
-            />
-            <figcaption>
-              <h3>
-                <a href="https://www.codepolitan.com/c/XQ2SI5M" target="_blank"
-                  >Certificate - Mahir menggunakan Text Editor buat Pemula</a
-                >
-              </h3>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="items">
-          <div class="img-center">
-            <img src="img/ut.jpg" alt="" />
+        <div class=" card-item">
+          <div class=" card-img">
+            <img src="img/fcp.png" alt="FreeCodeCamp" />
           </div>
-          <h3><a href="#">School at Universitas Terbuka</a></h3>
+          <h3>Learn At Free code camp</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            minus voluptatem quaerat assumenda totam natus beatae quod eveniet?
+            Esse, quos?
+          </p>
         </div>
-      </div>
+        <div class=" card-item">
+          <div class=" card-img">
+            <img src="img/6SMW2KK - Mengenal Pemrograman Komputer.jpg" alt="Mengenal Pemrograman Komputer" />
+          </div>
+          <h3>Mengenal Pemrograman Komputer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            minus voluptatem quaerat assumenda totam natus beatae quod eveniet?
+            Esse, quos?
+          </p>
+        </div>
+        <div class="card-item">
+          <div class=" card-img">
+            <img src="img/XQ2SI5M - Mahir menggunakan Text Editor buat Pemula.jpg" alt="logo code politan" />
+          </div>
+          <h3>Mahir menggunakan Text Editor buat Pemula</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            minus voluptatem quaerat assumenda totam natus beatae quod eveniet?
+            Esse, quos?
+          </p>
+        </div>
+        
     </section>
 
     <!-- about section end -->
@@ -160,21 +123,21 @@
 
       <div class="project-flex">
         <div class="pj-child">
-          <img src="img-pj/mirda-wb2.png" alt="website mirda" />
+          <img src="img-pj/niaga-hoster-pages.png" alt="website mirda" />
           <p class="bold">
             <a
-              href="https://adrian6688.github.io/mirda-fotocopy/"
+              href="https://github.com/isfndiar/niagahoster-pages/"
               target="_blank"
-              >Membuat landing Page Mirda fotocopy</a
+              >create example niagahoster-pages</a
             >
             <span class="description">HTML, CSS, JS</span>
           </p>
         </div>
         <div class="pj-child">
-          <img src="img-pj/cat-photo-gallery.png" alt="cat photo gallery" />
+          <img src="img-pj/cat-gallery.png" alt="cat photo gallery" />
           <p class="bold">
             <a
-              href="https://adrian6688.github.io/learn-flexbox-css-fcp-cat-photo-gallery/"
+              href="#"
               target="_blank"
               >Membuat cat Photo Gallery</a
             >
@@ -184,24 +147,24 @@
       </div>
       <div class="project-flex">
         <div class="pj-child">
-          <img src="img-pj/firts-wb.png" alt="website pertama" />
+          <img src="img-pj/learn-boostrap.png" alt="website pertama" />
           <p class="bold">
-            <a href="https://adrian6688.github.io/ookpo/" target="_blank"
-              >Membuat website pertama kali</a
-            ><span class="description">HTML, CSS</span>
+            <a href="https://github.com/isfndiar/learnBoostrap" target="_blank"
+              >create website artificial intelligence </a
+            ><span class="description">HTML, CSS, boostrap 5</span>
           </p>
         </div>
         <div class="pj-child">
           <img
-            src="img-pj/wb-kedai-kopi.png"
+            src="img-pj/table-pricing.png"
             alt="website kedai kopi responsive"
           />
           <p class="bold">
             <a
-              href="https://adrian6688.github.io/Finish-kedai-kopi/"
+              href="https://github.com/isfndiar/table-pricing"
               target="_blank"
-              >Membuat Landing page kedai kopi</a
-            ><span class="description">HTML, CSS, JS</span>
+              >create Table Pricing</a
+            ><span class="description">HTML, CSS</span>
           </p>
         </div>
       </div>
