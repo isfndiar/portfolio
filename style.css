@@ -1,3 +1,6 @@
+/* style.dark */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +10,14 @@
   scroll-behavior: smooth;
 }
 
+
+
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   background-color: rgb(24, 20, 20);
+  transition: all 0.3s ease;
 }
 
 /* navbar start */
@@ -27,6 +34,7 @@ body {
   top: 0;
   box-shadow: 0 2px 1px rgb(12, 12, 12);
   z-index: 9999;
+  transition: top 0.3s ;
 }
 
 .navbar .navbar-logo {
@@ -63,7 +71,7 @@ body {
 /* hero section */
 
 .hero {
-  background-color: rgb(24, 20, 20);
+  /* background-color: rgb(24, 20, 20); */
   /* background-color: salmon; */
   padding: 2rem 7%;
   margin: 0 auto;
@@ -332,8 +340,10 @@ body {
 }
 
 .contact .contact-flex form .sejajar {
+  width: 100%;
   display: flex;
-  column-gap: 20px;
+  background-color: salmon;
+  column-gap: 30px;
 }
 
 .sejajar .form-group {
@@ -344,7 +354,10 @@ body {
   width: 100%;
 }
 
+
+
 textarea {
+  width: 100%;
   background: none;
   color: #fff;
   border: #fff solid 1px;
@@ -412,12 +425,23 @@ footer .copyright span {
   color: #4e9f3d;
 }
 
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+    
+  }
+  .contact .contact-flex form .sejajar {
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 80%;
   }
 
-  header .navbar .navbar-logo {
+   .navbar .navbar-logo {
     font-size: 1rem;
   }
 
@@ -505,7 +529,10 @@ footer .copyright span {
 
   .contact .contact-flex form .sejajar {
     flex-direction: column;
+    font-size: unset;
   }
+
+
   textarea {
     width: 100%;
     text-decoration: none;
