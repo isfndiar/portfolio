@@ -15,14 +15,14 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #fff;
-  background-color: rgb(24, 20, 20);
+  color: #000000;
+  background-color: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
 
 /* navbar start */
 .navbar {
-  background-color: rgb(2, 2, 2);
+  background-color: rgb(255, 255, 255);
   display: flex;
   padding: 0 7%;
   height: 4rem;
@@ -32,9 +32,11 @@ body {
   right: 0;
   left: 0;
   top: 0;
-  box-shadow: 0 2px 1px rgb(12, 12, 12);
+  box-shadow: 0 2px 1px rgba(221, 220, 220, 0.24);
   z-index: 9999;
   transition: top 0.5s ;
+  background: transparent;
+  backdrop-filter: blur(4px);
 }
 
 .navbar .navbar-logo {
@@ -71,7 +73,7 @@ body {
 }
 
 #set-bg:hover  {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #hamburger-menu {
@@ -129,7 +131,7 @@ body {
 .hero .deskripsi h2 {
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: #000000;
   line-height: 1.2;
   padding: 2rem 0;
 }
@@ -151,18 +153,18 @@ body {
 }
 
 .hero .deskripsi .last-name {
-  color: #fff;
+  color: #000000;
   font-weight: bold;
 }
 
 .hero .deskripsi p {
-  font-weight: 300;
+  font-weight: 700;
   font-size: 0.8rem;
 }
 
 .hero .deskripsi a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   display: inline-block;
   margin-top: 10px;
   width: 2.3rem;
@@ -190,9 +192,23 @@ body {
   font-size: 2em;
 }
 
-/* .about {
-  padding-top: 5px;
-} */
+.about {
+  background-color: #e2c391;
+ position: relative;
+ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,195,145,1) 9%);
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  /* right: 0; */
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,195,145,1) 14%);
+}
+
+
 
 .about .card {
   display: flex;
@@ -213,6 +229,7 @@ body {
   height: 300px;
   padding: 10px;
   margin: 20px 10px;
+  border: solid 1px black;
   border-radius: 10px;
   /* background-color: salmon; */
   transition: 0.5s;
@@ -479,7 +496,7 @@ footer .copyright span {
 
 
   .navbar .navbar-nav {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     width: 15rem;
     height: 100vh;
@@ -494,6 +511,8 @@ footer .copyright span {
   }
 
   .navbar .navbar-nav a {
+    color: #000;
+    font-weight: bold;
     text-align: center;
     display: block;
     margin-top: 2rem;

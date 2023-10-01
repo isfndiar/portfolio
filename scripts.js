@@ -20,22 +20,53 @@ const userPhoto = document.querySelector('#photo-profile')
 const navbar = document.querySelector('.navbar')
 const navbarLogo = document.querySelector('.navbar-logo')
 
+// rotate photo
+userPhoto.addEventListener('click', function() {
+    this.classList.toggle('rotated')
+})
 
+// set mode moon or sun
+let isMoonMode = false
 setBg.addEventListener('click', function (e) {
-    const linkCss = document.querySelector('.hai')
-    linkCss.href.toggle = 'src/bang.css'
-    // DarkToLight()
-    // heroSection()
+    if (isMoonMode) {
+        setBg.children[0].className = 'fa-regular fa-sun'
+    } else {
+        setBg.children[0].className = 'fa-regular fa-moon'
+    }
+
+    // set new value
+    isMoonMode = !isMoonMode // change true false true false
+    DarkMode() // set css
     e.preventDefault()
 
 })
 
-const prevScroll = window.pageYOffset;
+let prevScroll = window.pageYOffset;
 window.addEventListener('scroll', function() {
-    this.window.pageYOffset
+    const currentScroll = window.pageYOffset;
+    if (prevScroll > currentScroll) {
+        navbar.style.top = '0';
+    } else {
+        navbar.style.top = '-100%';
+        
+    }
+    prevScroll = currentScroll
+    
 })
 
 
+
+function DarkMode() {
+
+    const gtsrcCss =  document.querySelector('.modeSetting')
+    if (isMoonMode) {
+        gtsrcCss.href = 'lightMode.css'
+    } else {
+        gtsrcCss.href = 'style.css'
+    }
+
+
+}
 
 function DarkToLight() {
     document.body.classList.toggle('white')
