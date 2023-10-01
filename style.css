@@ -75,7 +75,6 @@ body {
   /* background-color: salmon; */
   padding: 2rem 7%;
   margin: 0 auto;
-  height: 100vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -98,8 +97,7 @@ body {
 
 .hero .deskripsi {
   width: 500px;
-  padding-top: 90px;
-  padding-bottom: 2rem;
+  padding-top: 30px;
 }
 
 .hero .deskripsi h2 {
@@ -160,6 +158,10 @@ body {
   text-align: center;
   font-size: 2em;
 }
+
+/* .about {
+  padding-top: 5px;
+} */
 
 .about .card {
   display: flex;
@@ -339,18 +341,17 @@ body {
   margin-top: 10px;
 }
 
-.contact .contact-flex form .sejajar {
+.contact .contact-flex form .d-flex__inputNameEmail {
   width: 100%;
   display: flex;
-  background-color: salmon;
   column-gap: 30px;
 }
 
-.sejajar .form-group {
+.d-flex__inputNameEmail .form-group {
   width: 100%;
 }
 
-.contact .contact-flex form .sejajar input {
+.contact .contact-flex form .d-flex__inputNameEmail input {
   width: 100%;
 }
 
@@ -431,7 +432,7 @@ footer .copyright span {
     font-size: 90%;
     
   }
-  .contact .contact-flex form .sejajar {
+  .contact .contact-flex form .d-flex__inputNameEmail {
     font-size: 0.7rem;
   }
 }
@@ -495,7 +496,7 @@ footer .copyright span {
   }
 
   .about h2 {
-    padding-top: 100px;
+    padding-top: 10px;
   }
 
   .project h2 {
@@ -527,7 +528,7 @@ footer .copyright span {
     /* background-color: #4e9f3d; */
   }
 
-  .contact .contact-flex form .sejajar {
+  .contact .contact-flex form .d-flex__inputNameEmail {
     flex-direction: column;
     font-size: unset;
   }
