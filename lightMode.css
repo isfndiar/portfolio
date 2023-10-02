@@ -1,6 +1,5 @@
 /* style.dark */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +8,6 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
-
-
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -34,7 +30,7 @@ body {
   top: 0;
   box-shadow: 0 2px 1px rgba(221, 220, 220, 0.24);
   z-index: 9999;
-  transition: top 0.5s ;
+  transition: top 0.5s;
   background: transparent;
   backdrop-filter: blur(4px);
 }
@@ -48,10 +44,8 @@ body {
 .navbar .navbar-nav a {
   color: #9ae66e;
   padding: 0 10px;
-  display: inline-block
+  display: inline-block;
 }
-
-
 
 .navbar .navbar-nav a::after {
   content: "";
@@ -72,7 +66,7 @@ body {
   font-size: 1.5rem;
 }
 
-#set-bg:hover  {
+#set-bg:hover {
   color: rgb(0, 0, 0);
 }
 
@@ -115,9 +109,6 @@ body {
 .rotated {
   transform: rotateY(180deg);
 }
-
-
-
 
 .hero .deskripsi {
   width: 350px;
@@ -194,21 +185,27 @@ body {
 
 .about {
   background-color: #e2c391;
- position: relative;
- background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,195,145,1) 9%);
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(226, 195, 145, 1) 9%
+  );
 }
 
 .about::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   /* left: 0; */
   /* right: 0; */
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,195,145,1) 14%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(226, 195, 145, 1) 14%
+  );
 }
-
-
 
 .about .card {
   display: flex;
@@ -239,9 +236,6 @@ body {
   transform: translateY(-15px);
 }
 
-
-
-
 .about .card .card-item .card-img {
   height: 30%;
   background-repeat: no-repeat;
@@ -250,7 +244,6 @@ body {
   border: 1px solid black;
   border-radius: 10px;
   overflow: hidden;
-  
 }
 
 .about .card .card-item .card-img img {
@@ -282,35 +275,47 @@ body {
 }
 
 /* projects */
+
+.project {
+  margin-top: 0;
+  /* background-color: #9bbec7; */
+  background: rgb(226, 195, 145);
+  background: linear-gradient(
+    180deg,
+    rgba(226, 195, 145, 1) 13%,
+    rgba(155, 190, 199, 1) 17%
+  );
+}
+
 .project h2 {
+  padding-top: 2rem;
   padding-bottom: 100px;
 }
 
-.project .project-flex {
+.project .container {
   width: 100%;
+  /* background-color: aqua; */
   margin-bottom: 10px;
-  height: 20%;
-  display: flex;
-  justify-content: space-around;
-  column-gap: 100px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin-bottom: 50px;
 }
 
-
-
-.project .project-flex .pj-child {
+.project .container .row {
   display: flex;
-  column-gap: 10px;
-  justify-content: space-between;
+  column-gap: 30px;
+  justify-content: center;
   align-items: flex-start;
   text-align: left;
   margin-right: 19px;
   padding: 10px;
 }
 
-.project .project-flex .pj-child img {
-  max-width: 60%;
+.project .container .row .image {
+  width: 100%;
+}
+
+.project .container .row img {
   width: 100%;
   height: 100%;
   max-height: 20%;
@@ -322,7 +327,7 @@ body {
   transition: 0.5s;
 }
 
-.project .project-flex .pj-child img:hover {
+.project .container .row img:hover {
   cursor: pointer;
   transform: translateY(-10px);
 }
@@ -331,8 +336,10 @@ body {
   font-weight: bold;
 }
 
-.project .project-flex .pj-child .description {
+.project .container .row .description {
+  width: 100%;
   /* flex: 1 1 10px; */
+  /* background-color: salmon; */
   display: block;
   font-weight: normal;
   font-style: italic;
@@ -403,8 +410,6 @@ body {
   width: 100%;
 }
 
-
-
 textarea {
   width: 100%;
   background: none;
@@ -474,11 +479,9 @@ footer .copyright span {
   color: #4e9f3d;
 }
 
-
 @media (max-width: 1200px) {
   html {
     font-size: 90%;
-    
   }
   .contact .contact-flex form .d-flex__inputNameEmail {
     font-size: 0.7rem;
@@ -490,13 +493,12 @@ footer .copyright span {
     font-size: 80%;
   }
 
-   .navbar .navbar-logo {
+  .navbar .navbar-logo {
     font-size: 1rem;
   }
 
-
   .navbar .navbar-nav {
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     position: absolute;
     width: 15rem;
     height: 100vh;
@@ -511,8 +513,6 @@ footer .copyright span {
   }
 
   .navbar .navbar-nav a {
-    color: #000;
-    font-weight: bold;
     text-align: center;
     display: block;
     margin-top: 2rem;
@@ -525,20 +525,17 @@ footer .copyright span {
     margin-left: auto;
     /* padding-left: 200px; */
   }
-  
+
   #hamburger-menu {
     display: inline-block;
-  color: #4e9f3d;
-  margin-left: 2rem;
-
+    color: #4e9f3d;
+    margin-left: 2rem;
   }
-  
-  
+
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.5);
     /* transform-origin: left; */
   }
-
 
   .hero {
     flex-wrap: wrap;
@@ -561,10 +558,6 @@ footer .copyright span {
   .project h2 {
     padding-bottom: 50px;
     margin: 0;
-  }
-
-  .project .project-flex {
-    flex-direction: column;
   }
 
   .contact .contact-flex {
@@ -591,7 +584,6 @@ footer .copyright span {
     flex-direction: column;
     font-size: unset;
   }
-
 
   textarea {
     width: 100%;
