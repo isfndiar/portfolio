@@ -81,6 +81,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  animation: fadeIn 2s ease;
 }
 
 .hero .profil-logo {
@@ -442,6 +443,15 @@ footer .social i {
 
 footer .copyright span {
   color: #4e9f3d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1200px) {
